@@ -3,6 +3,7 @@
 
 ## Write a short comment describing this function
 
+#Reserve a memory space for the matrix
 makeCacheMatrix <- function(x = matrix()) {
   m<-NULL
   set<function(y){
@@ -18,8 +19,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## Write a short comment describing this function
 
+#Return a matrix is a inverse matrix x
 cacheSolve <- function(x, ...) {
-  ## Return a matrix that is the inverse of 'x'
   m<-x$getinversa()
   if(!is.null(m)){
     message("cached data")
